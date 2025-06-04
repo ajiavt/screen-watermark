@@ -1,5 +1,9 @@
 # Screen Watermark Application
 
+## Downloads
+for mac: https://drive.google.com/file/d/1iO6sabXpZ1B8lwrf0SpuagNiAZ4Oj5cP/view?usp=sharing
+for win: https://drive.google.com/file/d/1GxxuhHYzcYmiw137kPpdKyP3vYu8efK5/view?usp=sharing
+
 ## Introduction
 
 The Screen Watermark Application is a cross-platform desktop application (macOS and Windows) that allows users to display an image as a floating watermark over all other windows. Users can select an image, set its position, opacity, and size. The application is built using Electron, HTML, CSS, and JavaScript.
