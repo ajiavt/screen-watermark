@@ -1,8 +1,8 @@
 # Screen Watermark Application
 
 ## Downloads
-🍎 for mac: https://drive.google.com/file/d/1iO6sabXpZ1B8lwrf0SpuagNiAZ4Oj5cP/view?usp=sharing
-🪟 for win: https://drive.google.com/file/d/1GxxuhHYzcYmiw137kPpdKyP3vYu8efK5/view?usp=sharing
+- 🍎 for mac: https://drive.google.com/file/d/1iO6sabXpZ1B8lwrf0SpuagNiAZ4Oj5cP/view?usp=sharing
+- 🪟 for win: https://drive.google.com/file/d/1GxxuhHYzcYmiw137kPpdKyP3vYu8efK5/view?usp=sharing
 
 ## Introduction
 
