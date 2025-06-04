@@ -1,0 +1,109 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Important for transparent window */
+  background-color: transparent; /* Crucial for the overlay effect */
+  font-family: sans-serif;
+}
+
+#app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack controls on top of image */
+  justify-content: center; /* Center image if it's smaller than container */
+  align-items: center;   /* Center image if it's smaller than container */
+  position: relative; /* For positioning controls and resize handle */
+  -webkit-app-region: drag; /* Allows dragging the whole window */
+  user-select: none; /* Prevent text selection on the app */
+}
+
+#watermark-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.1); /* Slight background for visibility */
+  border-radius: 0 0 0 5px;
+  display: flex;
+  gap: 5px;
+  z-index: 100;
+  -webkit-app-region: no-drag; /* Elements inside controls should not drag window */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+#app-container:hover #watermark-controls {
+  opacity: 1; /* Show controls on hover */
+}
+
+#watermark-controls button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0,0,0,0.2);
+  color: #333;
+  padding: 3px 6px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+#watermark-controls button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#watermark-controls input[type="range"] {
+  width: 80px;
+  cursor: pointer;
+  height: 10px;
+  align-self: center;
+}
+
+#watermark-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the image fits within the bounds and maintains aspect ratio */
+  display: block; /* Remove extra space below image */
+  pointer-events: none; /* Image itself should not capture mouse events meant for dragging/resizing */
+}
+
+#resize-handle {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.2); /* Subtle handle */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: nwse-resize;
+  z-index: 101;
+  -webkit-app-region: no-drag; /* This handle should not drag the window */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+#app-container:hover #resize-handle {
+  opacity: 1; /* Show resize handle on hover */
+}
+
+/* Style for when no image is selected */
+#app-container.no-image {
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  background-color: rgba(0,0,0,0.1);
+}
+
+#app-container.no-image #watermark-image {
+  display: none;
+}
+
+#app-container.no-image::before {
+  content: "Click 🖼️ to select image";
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

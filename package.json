@@ -1,0 +1,25 @@
+{
+  "name": "screen-watermark",
+  "version": "1.0.0",
+  "description": "A simple screen watermark application.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=release-builds --prune=true",
+    "package-win": "npx @electron/packager . --overwrite --platform=win32 --arch=ia32 --out=release-builds --prune=true"
+  },
+  "keywords": [
+    "Electron",
+    "watermark",
+    "screen"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "@electron/packager": "^18.3.6"
+  },
+  "dependencies": {
+    "electron-store": "^8.1.0"
+  }
+}
