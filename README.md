@@ -1,10 +1,12 @@
 # Screen Watermark Application
 
 ## Downloads
+
 - 🍎 for mac: https://drive.google.com/file/d/1iO6sabXpZ1B8lwrf0SpuagNiAZ4Oj5cP/view?usp=sharing
 - 🪟 for win: https://drive.google.com/file/d/1GxxuhHYzcYmiw137kPpdKyP3vYu8efK5/view?usp=sharing
 
-## Documentation
+## Tutorial Video: How to Use the App
+
 - https://www.canva.com/design/DAGp6r-v0PU/aN1XEDZlIXSK1j41jv2Lkg/watch?utm_content=DAGp6r-v0PU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf0e146ca6f
 
 ## Introduction
