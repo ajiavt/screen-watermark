@@ -112,4 +112,5 @@ If you would like to contribute to this project, please fork the repository and 
 
 ## License
 
-This project is licensed under the [INSERT YOUR LICENSE HERE, e.g., MIT License].
+This project is licensed under the MIT License. Copyright (c) 2025 Aji Rama Wangsa.
+
